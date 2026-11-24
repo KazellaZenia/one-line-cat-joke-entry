@@ -16,11 +16,11 @@ A real, specific cat behaviour everyone recognises — the long blank-wall stare
 
 ## How it works
 
-`main.js` writes the single joke line to `$MAKEFUN_OUTPUT_DIR/entry.txt` (UTF-8, 90 characters, one line, non-blank). It validates the joke in code first (1–200 characters, single line, non-blank) and verifies the written file by reading it back. Pure Node.js standard library, no third-party imports.
+`main.py` writes the single joke line to `$MAKEFUN_OUTPUT_DIR/entry.txt` (UTF-8, 90 characters, one line, non-blank). It validates the joke in code first (1–200 characters, single line, non-blank) and verifies the written file by reading it back. Pure Python standard library, no third-party imports.
 
 ## Run it
 
 ```bash
-MAKEFUN_OUTPUT_DIR=/tmp/catjoke-out node main.js
+MAKEFUN_OUTPUT_DIR=/tmp/catjoke-out python3 main.py
 cat /tmp/catjoke-out/entry.txt
 ```
